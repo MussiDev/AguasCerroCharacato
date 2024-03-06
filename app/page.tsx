@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import Navbar from "./src/components/Navbar";
+import NavbarList from "./src/components/Navbar";
 
 const Home = () => {
 	return (
-		<main>
-			<Navbar />
+		<main className='bg-red-500'>
+			<NavbarList />
 		</main>
 	);
 };

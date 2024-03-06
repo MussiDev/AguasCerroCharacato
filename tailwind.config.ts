@@ -6,8 +6,9 @@ const config = {
 		"./app/**/*.{js,ts,jsx,tsx}",
 		"./pages/**/*.{js,ts,jsx,tsx}",
 		"./components/**/*.{js,ts,jsx,tsx}",
+		"./node_modules/flowbite-react/lib/**/*.js",
 	],
-	prefix: "no",
+	plugins: [require("flowbite/plugin")],
 } satisfies Config;
 
 export default config;

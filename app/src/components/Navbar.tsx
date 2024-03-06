@@ -1,57 +1,25 @@
 import React from "react";
-import {
-	NavigationMenu,
-	NavigationMenuContent,
-	NavigationMenuItem,
-	NavigationMenuLink,
-	NavigationMenuList,
-	NavigationMenuTrigger,
-	navigationMenuTriggerStyle,
-} from "../components/ui/navigation-menu";
-import Link from "next/link";
-
-const Navbar = () => {
+import { Navbar } from "flowbite-react";
+const NavbarList = () => {
 	return (
-		<NavigationMenu>
-			<NavigationMenuList>
-				<NavigationMenuItem>
-					<Link href='/docs' legacyBehavior passHref>
-						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-							Documentation
-						</NavigationMenuLink>
-					</Link>
-				</NavigationMenuItem>
-				<NavigationMenuItem>
-					<Link href='/docs' legacyBehavior passHref>
-						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-							Documentation
-						</NavigationMenuLink>
-					</Link>
-				</NavigationMenuItem>
-				<NavigationMenuItem>
-					<Link href='/docs' legacyBehavior passHref>
-						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-							Documentation
-						</NavigationMenuLink>
-					</Link>
-				</NavigationMenuItem>
-				<NavigationMenuItem>
-					<Link href='/docs' legacyBehavior passHref>
-						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-							Documentation
-						</NavigationMenuLink>
-					</Link>
-				</NavigationMenuItem>
-				<NavigationMenuItem>
-					<Link href='/docs' legacyBehavior passHref>
-						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-							Documentation
-						</NavigationMenuLink>
-					</Link>
-				</NavigationMenuItem>
-			</NavigationMenuList>
-		</NavigationMenu>
+		<Navbar fluid={true} rounded={true}>
+			<Navbar.Brand>
+				<span className='self-center whitespace-nowrap text-xl font-semibold dark:text-white'>
+					Cerro Chacarato
+				</span>
+			</Navbar.Brand>
+			<Navbar.Toggle className='text-black' theme={{ base: "p-2" }} />
+			<Navbar.Collapse>
+				<Navbar.Link href='' active={true}>
+					Home
+				</Navbar.Link>
+				<Navbar.Link href=''>About</Navbar.Link>
+				<Navbar.Link href=''>Services</Navbar.Link>
+				<Navbar.Link href=''>Pricing</Navbar.Link>
+				<Navbar.Link href=''>Contact</Navbar.Link>
+			</Navbar.Collapse>
+		</Navbar>
 	);
 };
 
-export default Navbar;
+export default NavbarList;
