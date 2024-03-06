@@ -1,0 +1,5 @@
+{
+	"explorer.fileNesting.patterns": {
+		"package.json": "components.json, package-lock.json, yarn.lock, pnpm-lock.yaml, tailwind.config.ts, next.config.mjs, next-env.d.ts, postcss.config.js, tsconfig.json, README.md, next.config.ts, next.config.jts, .gitignore, .eslintrc.json, node_modules"
+	}
+}
