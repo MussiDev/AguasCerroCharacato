@@ -10,7 +10,7 @@ const Gallery = () => {
 		"https://i.blogs.es/b71f8a/1366_2000-54-/1366_2000.jpeg",
 	];
 	return (
-		<section className='flex flex-col gap-4 items-center'>
+		<section className='flex flex-col gap-4 items-center mb-20'>
 			<h5 className='text-3xl md:text-4xl font-bold tracking-tight text-white my-2'>
 				Imágenes
 			</h5>
