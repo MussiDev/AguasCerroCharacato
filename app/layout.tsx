@@ -24,7 +24,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 				<link rel='icon' href='/favicon.ico' />
 				<link rel='apple-touch-icon' href='/favicon.ico' />
 			</head>
-			<body className='px-4  bg-gradient-to-r from-slate-950 to-slate-900 text-white flex flex-col justify-between h-screen'>
+			<body className='px-4 bg-gradient-to-r from-slate-950 to-slate-900 flex flex-col justify-between h-screen'>
 				<NavbarList />
 				{children}
 				<FooterItem />

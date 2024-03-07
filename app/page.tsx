@@ -1,6 +1,6 @@
 import React from "react";
 import BannerItem from "./src/components/Banner";
-import PlantSection from "./src/components/PlantSection";
+import Gallery from "./src/components/PlantSection";
 
 const Home = () => {
 	return (
@@ -14,7 +14,7 @@ const Home = () => {
 					"Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
 				}
 			/>
-			<PlantSection />
+			<Gallery />
 		</main>
 	);
 };

@@ -4,13 +4,23 @@ import useWindowDimensions from "../hooks/useDimensions";
 const NavbarList = () => {
 	const { width } = useWindowDimensions();
 	const [isMobile, setIsMobile] = useState(false);
+
 	useEffect(() => {
 		width && width < 768 ? setIsMobile(true) : setIsMobile(false);
 	}, [width]);
+
+	const Links = [
+		"Inicio",
+		"Productos",
+		"Nosotros",
+		"Nuestra Fábrica",
+		"Contacto",
+	];
+
 	return (
 		<Navbar
 			theme={{
-				root: { base: "bg-transparent p-2 text-black" },
+				root: { base: "bg-transparent p-2" },
 			}}
 			rounded={true}
 		>
@@ -23,37 +33,18 @@ const NavbarList = () => {
 				<Navbar.Toggle className='text-white' theme={{ base: "p-2" }} />
 			)}
 			<Navbar.Collapse>
-				<Navbar.Link
-					href=''
-					active={true}
-					className='text-white hover:bg-transparent hover:text-orange-700'
-				>
-					Home
-				</Navbar.Link>
-				<Navbar.Link
-					href=''
-					className='text-white hover:bg-transparent hover:text-orange-700'
-				>
-					About
-				</Navbar.Link>
-				<Navbar.Link
-					href=''
-					className='text-white hover:bg-transparent hover:text-orange-700'
-				>
-					Services
-				</Navbar.Link>
-				<Navbar.Link
-					href=''
-					className='text-white hover:bg-transparent hover:text-orange-700'
-				>
-					Pricing
-				</Navbar.Link>
-				<Navbar.Link
-					href=''
-					className='text-white hover:bg-transparent hover:text-orange-700'
-				>
-					Contact
-				</Navbar.Link>
+				{Links.map((link: string, key: number) => {
+					return (
+						<Navbar.Link
+							href=''
+							active={true}
+							key={key}
+							className='text-white hover:bg-transparent hover:text-blue-500 md:text-xl md:text-white'
+						>
+							{link}
+						</Navbar.Link>
+					);
+				})}
 			</Navbar.Collapse>
 		</Navbar>
 	);
