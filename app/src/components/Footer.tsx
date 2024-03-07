@@ -3,7 +3,10 @@ import React from "react";
 
 const FooterItem = () => {
 	return (
-		<Footer container className='bg-transparent flex flex-row justify-between'>
+		<Footer
+			container
+			className='bg-transparent flex flex-row justify-between border-t border-blue-500 rounded-none w-full'
+		>
 			<Footer.Copyright
 				href='#'
 				by='Aguas Cerro Characato'

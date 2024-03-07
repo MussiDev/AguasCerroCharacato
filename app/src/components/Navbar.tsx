@@ -9,19 +9,14 @@ const NavbarList = () => {
 		width && width < 768 ? setIsMobile(true) : setIsMobile(false);
 	}, [width]);
 
-	const Links = [
-		"Inicio",
-		"Productos",
-		"Nosotros",
-		"Nuestra Fábrica",
-		"Contacto",
-	];
+	const Links = ["Inicio", "Nuestra Fábrica", "Productos", "Contacto"];
 
 	return (
 		<Navbar
 			theme={{
-				root: { base: "bg-transparent p-2" },
+				root: { base: "bg-transparent p-6" },
 			}}
+			fluid
 			rounded={true}
 		>
 			<Navbar.Brand>

@@ -2,7 +2,7 @@ import { Button, Card } from "flowbite-react";
 import Image from "next/image";
 import React from "react";
 import { FaArrowDown } from "react-icons/fa";
-const BannerItem = ({
+const CardWithImage = ({
 	image,
 	title,
 	subtitle,
@@ -38,4 +38,4 @@ const BannerItem = ({
 	);
 };
 
-export default BannerItem;
+export default CardWithImage;
