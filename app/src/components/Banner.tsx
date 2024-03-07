@@ -11,7 +11,7 @@ const BannerItem = ({
 	subtitle: string;
 }) => {
 	return (
-		<div className='flex flex-col justify-center items-center md:flex-row md:gap-48'>
+		<div className='flex flex-col justify-center items-center md:flex-row md:gap-48 h-screen'>
 			<Card href='#' className='max-w-md hover:bg-transparent bg-transparent '>
 				<h5 className='text-4xl font-bold tracking-tight text-white'>
 					{title}
