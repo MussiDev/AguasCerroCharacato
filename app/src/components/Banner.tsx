@@ -1,27 +1,28 @@
-import { Banner, Button } from "flowbite-react";
+import { Banner, Button, Card } from "flowbite-react";
 import Image from "next/image";
 import React from "react";
 
 const BannerItem = () => {
 	return (
-		<Banner className='h-80 relative w-full grid grid-flow-row grid-cols-2 place-content-around place-items-center px-48'>
-			<div className='flex flex-col w-full items-start gap-4'>
-				<h1 className='text-white font-bold text-7xl'>Cerro Characato</h1>
-				<p className='text-white w-[80%]'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sed
-					quasi iure in! Accusantium porro, illum odio ab, in possimus vero
-					quidem, quod neque rem molestias impedit officia expedita dolore!
+		<div className='flex flex-col justify-center items-center md:flex-row md:gap-48'>
+			<Card href='#' className='max-w-md hover:bg-transparent bg-transparent '>
+				<h5 className='text-4xl font-bold tracking-tight text-white'>
+					Noteworthy technology acquisitions 2021
+				</h5>
+				<p className='font-normal text-white'>
+					Here are the biggest enterprise technology acquisitions of 2021 so
+					far, in reverse chronological order. Here are the biggest enterprise
+					technology acquisitions of 2021 so far, in reverse chronological
+					order.
 				</p>
-				<Button>Conocenos!</Button>
-			</div>
-			<div className='h-80'>
-				<img
-					src='https://static.wixstatic.com/media/0ca6e2_7355c60ed1214e048ddbf99d7484ac5e~mv2.png/v1/crop/x_0,y_25,w_540,h_1094/fill/w_256,h_518,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0ca6e2_7355c60ed1214e048ddbf99d7484ac5e~mv2.png'
-					alt=''
-					className='h-80'
-				/>
-			</div>
-		</Banner>
+			</Card>
+
+			<img
+				src='https://static.wixstatic.com/media/0ca6e2_7355c60ed1214e048ddbf99d7484ac5e~mv2.png/v1/crop/x_0,y_25,w_540,h_1094/fill/w_256,h_518,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0ca6e2_7355c60ed1214e048ddbf99d7484ac5e~mv2.png'
+				alt=''
+				className='h-80'
+			/>
+		</div>
 	);
 };
 
