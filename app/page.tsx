@@ -1,11 +1,10 @@
-"use client";
 import React from "react";
-import NavbarList from "./src/components/Navbar";
+import BannerItem from "./src/components/Banner";
 
 const Home = () => {
 	return (
-		<main className='bg-red-500'>
-			<NavbarList />
+		<main className='fluid'>
+			<BannerItem />
 		</main>
 	);
 };
