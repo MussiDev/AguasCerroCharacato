@@ -12,19 +12,19 @@ const CardWithImage = ({
 	subtitle: string;
 }) => {
 	return (
-		<section className='flex flex-col py-40 gap-4'>
+		<section className='flex flex-col py-20 md:py-40 gap-4'>
 			<h5 className='text-xl md:text-5xl font-bold tracking-tight text-white text-center'>
 				Nuestra Agua
 			</h5>
-			<div className='flex flex-col justify-evenly items-center md:flex-row gap-4 flex-wrap mt-16'>
+			<div className='flex flex-col justify-evenly items-center md:flex-row gap-4 flex-wrap md:mt-16'>
 				<Card
 					href='#'
-					className='md:max-w-3xl max-w-full hover:bg-transparent bg-transparent '
+					className='md:max-w-3xl max-w-72 hover:bg-transparent bg-transparent '
 				>
-					<h5 className='text-left text-xl md:text-5xl font-bold tracking-tight text-white'>
+					<h5 className='text-left text-lg md:text-5xl font-bold tracking-tight text-white'>
 						{title}
 					</h5>
-					<p className='font-normal text-white text-lg md:text-xl'>
+					<p className='font-normal text-white text-md md:text-xl'>
 						{subtitle}
 					</p>
 					<Button>

@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images:{
-    domains: ['static.wixstatic.com', 'i.blogs.es'],
+    domains: ['static.wixstatic.com', 'i.blogs.es', 'fotos.perfil.com', 'png.pngtree.com', 'www.mendozaturismo.com.ar', 'tangol.com'],
   }
 };
 

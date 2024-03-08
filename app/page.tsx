@@ -5,7 +5,7 @@ import CarouselComponent from "./src/components/Carousel";
 
 const Home = () => {
 	return (
-		<main>
+		<div>
 			<CarouselComponent />
 			<CardWithImage
 				image={
@@ -17,7 +17,7 @@ const Home = () => {
 				}
 			/>
 			<Gallery />
-		</main>
+		</div>
 	);
 };
 

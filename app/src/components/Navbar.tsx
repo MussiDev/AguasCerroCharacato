@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navbar } from "flowbite-react";
 import useWindowDimensions from "../hooks/useDimensions";
+import Image from "next/image";
 const NavbarList = () => {
 	const { width } = useWindowDimensions();
 	const [isMobile, setIsMobile] = useState(false);
@@ -14,15 +15,21 @@ const NavbarList = () => {
 	return (
 		<Navbar
 			theme={{
-				root: { base: "bg-transparent p-6" },
+				root: {
+					base: "bg-transparent absolute z-50 flex flex-row justify-between w-full",
+				},
 			}}
-			fluid
-			rounded={true}
 		>
 			<Navbar.Brand>
-				<span className='text-white self-center whitespace-nowrap text-xl font-semibold dark:text-white'>
-					LOGO
-				</span>
+				<div className='relative w-16 md:w-full'>
+					<Image
+						src='https://png.pngtree.com/png-clipart/20230927/ourmid/pngtree-simple-mountain-logo-png-image_10168491.png'
+						alt=''
+						quality={75}
+						width={100}
+						height={100}
+					/>
+				</div>
 			</Navbar.Brand>
 			{isMobile && (
 				<Navbar.Toggle className='text-white' theme={{ base: "p-2" }} />
