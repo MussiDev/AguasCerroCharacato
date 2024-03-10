@@ -13,6 +13,13 @@ const Home = () => {
 				title='Nuestra Agua'
 				subtitleCard='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
 			/>
+			<CardWithImage
+				titleCard='Noteworthy technology acquisitions 2021'
+				imageCard='https://fotos.perfil.com/2023/05/29/cerro-characato-sa-1577018.jpg'
+				title='Nuestra Planta'
+				subtitleCard='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+				ImageLeft={true}
+			/>
 			<Gallery />
 		</div>
 	);

@@ -4,7 +4,7 @@ import React from "react";
 
 const CarouselComponent = () => {
 	return (
-		<div className='h-56 sm:h-64 xl:h-80 2xl:h-screen relative'>
+		<div className='h-56 sm:h-64 lg:h-screen relative'>
 			<Carousel
 				theme={{
 					root: {
@@ -12,7 +12,7 @@ const CarouselComponent = () => {
 						rightControl: "hidden",
 					},
 					scrollContainer: {
-						base: "flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth snap-x indiana-scroll-container indiana-scroll-container--hide-scrollbars",
+						base: "bg-cover flex h-full snap-mandatory overflow-y-hidden overflow-x-scroll scroll-smooth snap-x indiana-scroll-container indiana-scroll-container--hide-scrollbars",
 					},
 					indicators: { base: "" },
 				}}
