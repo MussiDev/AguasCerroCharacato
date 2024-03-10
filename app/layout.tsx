@@ -4,6 +4,7 @@ import React from "react";
 import "../styles/globals.css";
 import NavbarList from "./src/components/Navbar";
 import FooterItem from "./src/components/Footer";
+import SocialMedia from "./src/components/SocialMedia";
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang='es'>
@@ -29,6 +30,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 				<main className='bg-gradient-to-r from-slate-950 to-slate-900'>
 					{children}
 				</main>
+				<SocialMedia />
 				<FooterItem />
 			</body>
 		</html>
