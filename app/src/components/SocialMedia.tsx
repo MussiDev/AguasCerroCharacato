@@ -6,7 +6,7 @@ const SocialMedia = () => {
 
 	return (
 		showButton && (
-			<div className='flex flex-col gap-6 bottom-10 right-6 fixed'>
+			<div className='flex flex-col gap-6 bottom-20 right-6 fixed'>
 				<p className='bg-[#25D366] text-white p-2 rounded-full cursor-pointer'>
 					<FaWhatsapp size={20} />
 				</p>

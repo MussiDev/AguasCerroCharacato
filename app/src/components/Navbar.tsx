@@ -16,7 +16,7 @@ const NavbarList = () => {
 		<Navbar
 			theme={{
 				root: {
-					base: "bg-transparent absolute z-50 flex flex-row justify-between w-full",
+					base: "bg-transparent absolute z-50 flex flex-row justify-between w-full px-4",
 				},
 			}}
 		>
