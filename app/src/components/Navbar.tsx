@@ -16,7 +16,7 @@ const NavbarList = () => {
 		<Navbar
 			theme={{
 				root: {
-					base: "bg-transparent absolute z-50 flex flex-row justify-between w-full px-4",
+					base: "bg-transparent absolute z-50 flex flex-row justify-between w-full lg:px-4",
 				},
 			}}
 		>
@@ -34,14 +34,18 @@ const NavbarList = () => {
 			{isMobile && (
 				<Navbar.Toggle className='text-white' theme={{ base: "p-2" }} />
 			)}
-			<Navbar.Collapse>
+			<Navbar.Collapse
+				theme={{
+					base: "w-full md:block md:w-auto bg-[#0f172a] md:bg-transparent",
+				}}
+			>
 				{Links.map((link: string, key: number) => {
 					return (
 						<Navbar.Link
 							href=''
 							active={true}
 							key={key}
-							className='text-white hover:bg-transparent hover:text-blue-500 md:text-xl md:text-white'
+							className='bg-[#0f172a] text-white hover:bg-transparent hover:text-blue-500 md:text-xl md:text-white md:bg-transparent'
 						>
 							{link}
 						</Navbar.Link>
