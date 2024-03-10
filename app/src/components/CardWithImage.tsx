@@ -1,42 +1,37 @@
-import { Button, Card } from "flowbite-react";
 import Image from "next/image";
 import React from "react";
-import { FaArrowDown } from "react-icons/fa";
-const CardWithImage = ({
-	image,
-	title,
-	subtitle,
-}: {
-	image: string;
+import CardWithButton from "./CardWithButton";
+
+interface CardWithImageProps {
 	title: string;
-	subtitle: string;
-}) => {
+	imageCard: string;
+	titleCard: string;
+	subtitleCard: string;
+}
+
+const CardWithImage = ({
+	title,
+	imageCard,
+	titleCard,
+	subtitleCard,
+}: CardWithImageProps) => {
 	return (
 		<section className='flex flex-col py-20 md:py-40 gap-4'>
 			<h5 className='text-xl md:text-5xl font-bold tracking-tight text-white text-center'>
-				Nuestra Agua
+				{title}
 			</h5>
 			<div className='flex flex-col justify-evenly items-center md:flex-row gap-4 flex-wrap md:mt-16'>
-				<Card
-					href='#'
-					className='md:max-w-3xl max-w-72 hover:bg-transparent bg-transparent '
-				>
-					<h5 className='text-left text-lg md:text-5xl font-bold tracking-tight text-white'>
-						{title}
-					</h5>
-					<p className='font-normal text-white text-md md:text-xl'>
-						{subtitle}
-					</p>
-					<Button>
-						Conocé más
-						<FaArrowDown className='ms-2' />
-					</Button>
-				</Card>
+				<CardWithButton
+					title={titleCard}
+					subtitle={subtitleCard}
+					textButton='Conocé más'
+				/>
+
 				<div className='relative h-[22rem] w-44'>
 					<Image
 						layout='fill'
-						alt=''
-						src={image}
+						alt={`Image card ${title}`}
+						src={imageCard}
 						className='origin-center rotate-12'
 					/>
 				</div>

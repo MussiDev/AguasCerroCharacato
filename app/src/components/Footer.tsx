@@ -2,6 +2,7 @@ import { Footer } from "flowbite-react";
 import React from "react";
 
 const FooterItem = () => {
+	const linksFooterr = ["About", "Privacy Policy", "Licensing", "Contact"];
 	return (
 		<Footer
 			container
@@ -14,18 +15,11 @@ const FooterItem = () => {
 				className='text-white'
 			/>
 			<Footer.LinkGroup>
-				<Footer.Link href='#' className='text-white'>
-					About
-				</Footer.Link>
-				<Footer.Link href='#' className='text-white'>
-					Privacy Policy
-				</Footer.Link>
-				<Footer.Link href='#' className='text-white'>
-					Licensing
-				</Footer.Link>
-				<Footer.Link href='#' className='text-white'>
-					Contact
-				</Footer.Link>
+				{linksFooterr.map((link: string, index: number) => (
+					<Footer.Link href='#' key={index} className='text-white'>
+						{link}
+					</Footer.Link>
+				))}
 			</Footer.LinkGroup>
 		</Footer>
 	);
