@@ -16,7 +16,7 @@ const CardWithButton = ({
 	return (
 		<Card
 			href='#'
-			className='md:max-w-3xl max-w-72 sm:max-w-80 hover:bg-transparent bg-transparent '
+			className='max-w-72 sm:max-w-92 md:max-w-3xl hover:bg-transparent bg-transparent '
 		>
 			{title && (
 				<h5 className='text-left text-lg md:text-3xl lg:text-4xl font-bold tracking-tight text-white'>

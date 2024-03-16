@@ -4,7 +4,7 @@ import React from "react";
 
 const CarouselComponent = () => {
 	return (
-		<div className='h-56 sm:h-64 md:h-72 lg:h-screen relative'>
+		<div className='h-56 sm:h-64 md:h-72 lg:h-screen relative' id='Inicio'>
 			<Carousel
 				theme={{
 					root: {

@@ -12,8 +12,7 @@ const FooterItem = () => {
 				<div className='grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1 gap-12'>
 					<div className='flex flex-row gap-4 items-center'>
 						<Footer.Brand
-							href='https://png.pngtree.com/png-clipart/20230927/ourmid/pngtree-simple-mountain-logo-png-image_10168491.png'
-							src='https://png.pngtree.com/png-clipart/20230927/ourmid/pngtree-simple-mountain-logo-png-image_10168491.png'
+							src='/images/logo.png'
 							alt='Aguas Cerro Characato Logo'
 							theme={{ img: "w-12 h-12" }}
 						/>
@@ -30,24 +29,18 @@ const FooterItem = () => {
 					</div>
 					<div className='grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6'>
 						<div>
-							<Footer.Title title='about' />
 							<Footer.LinkGroup col>
-								<Footer.Link href='#'>Flowbite</Footer.Link>
-								<Footer.Link href='#'>Tailwind CSS</Footer.Link>
+								<Footer.Link href='#'>Inicio</Footer.Link>
+								<Footer.Link href='#'>Nuestra Agua</Footer.Link>
+								<Footer.Link href='#'>Nuestra Geografía</Footer.Link>
 							</Footer.LinkGroup>
 						</div>
 						<div>
-							<Footer.Title title='Follow us' />
 							<Footer.LinkGroup col>
-								<Footer.Link href='#'>Github</Footer.Link>
-								<Footer.Link href='#'>Discord</Footer.Link>
-							</Footer.LinkGroup>
-						</div>
-						<div>
-							<Footer.Title title='Legal' />
-							<Footer.LinkGroup col>
-								<Footer.Link href='#'>Privacy Policy</Footer.Link>
-								<Footer.Link href='#'>Terms &amp; Conditions</Footer.Link>
+								<Footer.Link href='#'>Nuestra Historia</Footer.Link>
+								<Footer.Link href='#'>
+									Compromiso con el Medio Ambiente
+								</Footer.Link>
 							</Footer.LinkGroup>
 						</div>
 					</div>

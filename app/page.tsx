@@ -11,14 +11,31 @@ const Home = () => {
 				titleCard='Nuestra agua y sus bondades'
 				imageCard='/images/botella.png'
 				title='Nuestra Agua'
+				bottle={true}
+				id='Agua'
 				subtitleCard='Desde las profundidades del Cerro Characato emerge una vertiente de agua pura, natural, cristalina y rica en minerales. Esta agua recorre el corazón del macizo de los gigantes, filtrándose de forma natural. Luego, tras nuestro proceso final de filtrado, es envasada con los más altos estándares de calidad. De esta manera, aseguramos su pureza hasta el momento de su consumo.'
 			/>
-			*
 			<CardWithImage
-				titleCard=''
+				titleCard='Geografía'
 				imageCard='/images/fondo.jpg'
 				title='Nuestra Geografía'
-				subtitleCard=' Sierras Grandes, es el nombre de un cordón montañoso paralelo a la Cordillera de los Andes. En este se encuentra la reserva hídrica más importante de la provi córdoba y sus picos más altos. Nuestro Cerro Characato se encuentra ubicado en el norte de esta formación, a 30 kilómetros de La Falda. En el encuentro de dos s geográficos, la pampa de altura de los gigantes y el chaco serrano seco que se extiend los gigantes hasta Bolivia y Paraguay. Es una tierra que aprovecha las bondades de sistemas convirtiéndolo en un lugar único. Ubicado entre valles, al oeste el V Traslasierra, al sur el Valle de Calamuchita y al noreste el Valle de Punilla, desde lleguemos, previamente, debimos recorrer alguna de estas 3 extensiones de tierra que todo el color a esta hermosa provincia.'
+				subtitleCard='Sierras Grandes, es el nombre de un cordón montañoso paralelo a la Cordillera de los Andes. En este se encuentra la reserva hídrica más importante de la provi córdoba y sus picos más altos. Nuestro Cerro Characato se encuentra ubicado en el norte de esta formación, a 30 kilómetros de La Falda. En el encuentro de dos s geográficos, la pampa de altura de los gigantes y el chaco serrano seco que se extiend los gigantes hasta Bolivia y Paraguay. Es una tierra que aprovecha las bondades de sistemas convirtiéndolo en un lugar único. Ubicado entre valles, al oeste el V Traslasierra, al sur el Valle de Calamuchita y al noreste el Valle de Punilla, desde lleguemos, previamente, debimos recorrer alguna de estas 3 extensiones de tierra que todo el color a esta hermosa provincia.'
+				ImageLeft={true}
+				id='Geografia'
+			/>
+			<CardWithImage
+				titleCard='Cerro Characato SA'
+				imageCard='/images/logo.png'
+				title='Nuestra Historia'
+				id='Historia'
+				subtitleCard='Se fundó en agosto de 1990, era una época de cambios en el país y esto no dejo de ser uno de ellos, el mundo del agua era algo nuevo, de otro rubro, pero cuando le ofrecieron a Eduardo la posibilidad de comprar unas tierras en una zona adentrada en la sierra Cordobesas, en las cuales se ubicaba la vertiente de agua más pura de la zona, no lo dudo ni un segundo y dijo que sí. La producción de agua de a poco empezó y sufrió muchos altibajos, pero siempre salió adelante, porque cada día se le puso lo más importante, lo que se requiere para tener éxito, mucho amor y pasión. Cerro Characato SA a un nivel de venta nacional y llegado su tiempo, por la calidad del producto, poder exportarlo. Hoy con más de 33 años de experiencia y luego de haber pasado muchas crisis económicas podemos decirles que somos una empresa con bases firmes, que les proveerá de agua mineral pura de manantial para cada una de sus necesidades. '
+			/>
+			<CardWithImage
+				titleCard='Medio Ambiente'
+				imageCard='/images/catarata.jpg'
+				id='Ambiente'
+				title='Compromiso con el Medio Ambiente'
+				subtitleCard='Nuestras botellas se hacen a base de plástico PET reciclado, tenemos el compromiso con el medio ambiente de que si utilizamos un recurso tan rico que este nos brinda, poder cuidarlo de manera responsable y segura. Para el envasado utilizamos envases que son aptos para reciclar en su totalidad, tanto la botella como la tapa o su etiqueta, de esta forma nuestros productos parten de material reciclado y pueden volver a ser botella para un nuevo producto en poco tiempo, formando un circulo de responsabilidad en el cuidado del medio ambiente. "Un esfuerzo hoy, es un alivio mañana".'
 				ImageLeft={true}
 			/>
 			{/*<Gallery />*/}

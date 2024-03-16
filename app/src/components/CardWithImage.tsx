@@ -8,6 +8,8 @@ interface CardWithImageProps {
 	titleCard: string;
 	subtitleCard: string;
 	ImageLeft?: boolean;
+	bottle?: boolean;
+	id: string;
 }
 
 const CardWithImage = ({
@@ -16,9 +18,11 @@ const CardWithImage = ({
 	titleCard,
 	subtitleCard,
 	ImageLeft,
+	bottle,
+	id,
 }: CardWithImageProps) => {
 	return (
-		<section className='flex flex-col py-20 md:py-40 gap-4 md:px-12'>
+		<section className='flex flex-col py-20 md:py-40 gap-4 md:px-12' id={id}>
 			<h5 className='text-xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white text-center'>
 				{title}
 			</h5>
@@ -46,15 +50,25 @@ const CardWithImage = ({
 						subtitle={subtitleCard}
 						textButton='Conocé más'
 					/>
-
-					<div className='relative h-[18rem] w-52 md:h-[22rem] md:w-64'>
-						<Image
-							layout='fill'
-							alt={`Image card ${title}`}
-							src={imageCard}
-							className='origin-center rotate-12'
-						/>
-					</div>
+					{bottle ? (
+						<div className='relative h-[18rem] w-52 md:h-[22rem] md:w-64'>
+							<Image
+								layout='fill'
+								alt={`Image card ${title}`}
+								src={imageCard}
+								className='origin-center rotate-12'
+							/>
+						</div>
+					) : (
+						<div className='relative w-48 h-48 md:w-72 md:h-72'>
+							<Image
+								layout='fill'
+								alt={`Image card ${title}`}
+								src={imageCard}
+								className='origin-center'
+							/>
+						</div>
+					)}
 				</div>
 			)}
 		</section>

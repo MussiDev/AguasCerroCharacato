@@ -4,6 +4,7 @@ import { Navbar } from "flowbite-react";
 import useWindowDimensions from "../hooks/useDimensions";
 import Image from "next/image";
 import useScroll from "../hooks/useScroll";
+import Link from "next/link";
 const NavbarList = () => {
 	const { showButton } = useScroll();
 	const { width } = useWindowDimensions();
@@ -13,7 +14,13 @@ const NavbarList = () => {
 		width && width < 768 ? setIsMobile(true) : setIsMobile(false);
 	}, [width]);
 
-	const Links = ["Inicio", "Nuestra Fábrica", "Productos", "Contacto"];
+	const Links = [
+		{ href: "#Inicio", link: "Inicio" },
+		{ href: "#Agua", link: "Nuestra Agua" },
+		{ href: "#Geografia", link: "Nuestra Geografía" },
+		{ href: "#Historia", link: "Nuestra Historia" },
+		{ href: "#Ambiente", link: "Medio Ambiente" },
+	];
 
 	return (
 		<Navbar
@@ -46,16 +53,15 @@ const NavbarList = () => {
 					base: "w-full md:block md:w-auto bg-[#0f172a] md:bg-transparent",
 				}}
 			>
-				{Links.map((link: string, key: number) => {
+				{Links.map((nav: any, key: number) => {
 					return (
-						<Navbar.Link
-							href=''
-							active={true}
+						<Link
+							href={nav.href}
 							key={key}
-							className='bg-[#0f172a] text-white hover:bg-transparent hover:text-primary md:text-xl md:text-white md:bg-transparent'
+							className='focus:text-primary block py-2 pr-4 pl-3 md:p-0 dark:text-white md:text-md  bg-[#0f172a] text-white hover:bg-transparent hover:text-primary md:text-md lg:text-lg md:text-white md:bg-transparent'
 						>
-							{link}
-						</Navbar.Link>
+							{nav.link}
+						</Link>
 					);
 				})}
 			</Navbar.Collapse>
