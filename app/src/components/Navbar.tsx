@@ -1,8 +1,11 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import { Navbar } from "flowbite-react";
 import useWindowDimensions from "../hooks/useDimensions";
 import Image from "next/image";
+import useScroll from "../hooks/useScroll";
 const NavbarList = () => {
+	const { showButton } = useScroll();
 	const { width } = useWindowDimensions();
 	const [isMobile, setIsMobile] = useState(false);
 
@@ -16,19 +19,23 @@ const NavbarList = () => {
 		<Navbar
 			theme={{
 				root: {
-					base: "bg-transparent absolute z-50 flex flex-row justify-between w-full lg:px-4",
+					base: `${
+						showButton ? "bg-slate-900" : "py-4 bg-transparent"
+					} absolute z-50 flex flex-row justify-between w-full lg:px-4 fixed`,
 				},
 			}}
 		>
 			<Navbar.Brand>
-				<div className='relative w-16 md:w-full'>
-					<Image
-						src='https://png.pngtree.com/png-clipart/20230927/ourmid/pngtree-simple-mountain-logo-png-image_10168491.png'
-						alt=''
-						quality={75}
-						width={100}
-						height={100}
-					/>
+				<div className='relative'>
+					{showButton && (
+						<Image
+							src='/images/logo.png'
+							alt=''
+							quality={75}
+							width={80}
+							height={100}
+						/>
+					)}
 				</div>
 			</Navbar.Brand>
 			{isMobile && (
@@ -45,7 +52,7 @@ const NavbarList = () => {
 							href=''
 							active={true}
 							key={key}
-							className='bg-[#0f172a] text-white hover:bg-transparent hover:text-blue-500 md:text-xl md:text-white md:bg-transparent'
+							className='bg-[#0f172a] text-white hover:bg-transparent hover:text-primary md:text-xl md:text-white md:bg-transparent'
 						>
 							{link}
 						</Navbar.Link>

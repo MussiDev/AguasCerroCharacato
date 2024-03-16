@@ -8,19 +8,20 @@ const Home = () => {
 		<div>
 			<CarouselComponent />
 			<CardWithImage
-				titleCard='Noteworthy technology acquisitions 2021'
-				imageCard='https://static.wixstatic.com/media/0ca6e2_7355c60ed1214e048ddbf99d7484ac5e~mv2.png/v1/crop/x_0,y_25,w_540,h_1094/fill/w_256,h_518,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0ca6e2_7355c60ed1214e048ddbf99d7484ac5e~mv2.png'
+				titleCard='Nuestra agua y sus bondades'
+				imageCard='/images/botella.png'
 				title='Nuestra Agua'
-				subtitleCard='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+				subtitleCard='Desde las profundidades del Cerro Characato emerge una vertiente de agua pura, natural, cristalina y rica en minerales. Esta agua recorre el corazón del macizo de los gigantes, filtrándose de forma natural. Luego, tras nuestro proceso final de filtrado, es envasada con los más altos estándares de calidad. De esta manera, aseguramos su pureza hasta el momento de su consumo.'
 			/>
+			*
 			<CardWithImage
-				titleCard='Noteworthy technology acquisitions 2021'
-				imageCard='https://fotos.perfil.com/2023/05/29/cerro-characato-sa-1577018.jpg'
-				title='Nuestra Planta'
-				subtitleCard='Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.'
+				titleCard=''
+				imageCard='/images/fondo.jpg'
+				title='Nuestra Geografía'
+				subtitleCard=' Sierras Grandes, es el nombre de un cordón montañoso paralelo a la Cordillera de los Andes. En este se encuentra la reserva hídrica más importante de la provi córdoba y sus picos más altos. Nuestro Cerro Characato se encuentra ubicado en el norte de esta formación, a 30 kilómetros de La Falda. En el encuentro de dos s geográficos, la pampa de altura de los gigantes y el chaco serrano seco que se extiend los gigantes hasta Bolivia y Paraguay. Es una tierra que aprovecha las bondades de sistemas convirtiéndolo en un lugar único. Ubicado entre valles, al oeste el V Traslasierra, al sur el Valle de Calamuchita y al noreste el Valle de Punilla, desde lleguemos, previamente, debimos recorrer alguna de estas 3 extensiones de tierra que todo el color a esta hermosa provincia.'
 				ImageLeft={true}
 			/>
-			<Gallery />
+			{/*<Gallery />*/}
 		</div>
 	);
 };

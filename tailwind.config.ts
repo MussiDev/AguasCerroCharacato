@@ -11,7 +11,12 @@ const config = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				hero: "url('https://tangol.com/blog/Fotos/Notas/reserva-natural-villavicencio_337_202102181152000.JPG')",
+				hero: "url('/images/fondo.jpg')",
+			},
+			colors: {
+				primary: "#f80605",
+				secondary: "#404494",
+				"white-light": "#f1ecf2",
 			},
 		},
 	},

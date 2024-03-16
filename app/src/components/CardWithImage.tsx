@@ -18,18 +18,18 @@ const CardWithImage = ({
 	ImageLeft,
 }: CardWithImageProps) => {
 	return (
-		<section className='flex flex-col py-20 md:py-40 gap-4'>
+		<section className='flex flex-col py-20 md:py-40 gap-4 md:px-12'>
 			<h5 className='text-xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white text-center'>
 				{title}
 			</h5>
 			{ImageLeft ? (
-				<div className='mx-2 flex flex-col justify-evenly items-center md:flex-row gap-4 flex-wrap md:mt-16'>
-					<div className='h-40 md:h-48 md:w-96 w-72 relative'>
+				<div className='grid grid-cols-1 lg:grid-cols-2 gap-16 place-content-center place-items-center md:mt-16'>
+					<div className='relative h-[10rem] w-[16rem] sm:h-[16rem] sm:w-96 lg:w-[30rem] lg:h-[17rem] xl:w-[40rem] xl:h-[20rem]'>
 						<Image
 							layout='fill'
 							alt={`Image card ${title}`}
 							src={imageCard}
-							className='origin-center rounded-md'
+							className='origin-center rounded-sm'
 						/>
 					</div>
 
@@ -40,14 +40,14 @@ const CardWithImage = ({
 					/>
 				</div>
 			) : (
-				<div className='flex flex-col justify-evenly items-center md:flex-row gap-4 flex-wrap md:mt-16'>
+				<div className='grid grid-cols-1 lg:grid-cols-2 gap-16 place-content-center place-items-center md:mt-16'>
 					<CardWithButton
 						title={titleCard}
 						subtitle={subtitleCard}
 						textButton='Conocé más'
 					/>
 
-					<div className='relative h-[22rem] w-44'>
+					<div className='relative h-[18rem] w-52 md:h-[22rem] md:w-64'>
 						<Image
 							layout='fill'
 							alt={`Image card ${title}`}

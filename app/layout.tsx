@@ -1,15 +1,21 @@
-"use client";
-
+import { Space_Grotesk } from "next/font/google";
 import React from "react";
 import "../styles/globals.css";
 import NavbarList from "./src/components/Navbar";
 import FooterItem from "./src/components/Footer";
 import SocialMedia from "./src/components/SocialMedia";
+const poppins = Space_Grotesk({
+	subsets: ["latin"],
+	weight: ["300", "400", "500", "600", "700"],
+});
+export const metadata = {
+	title: "Aguas Cerro Chacarato - Agua Mineral",
+	description: "Página de Aguas Cerro Characato S.A",
+};
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
-		<html lang='es'>
+		<html lang='es' className={poppins.className}>
 			<head>
-				<title>Aguas Cerro Chacarato - Agua Mineral</title>
 				<meta charSet='utf-8' />
 				<meta content='width=device-width, initial-scale=1.0' name='viewport' />
 				<meta content='es' httpEquiv='Content-Language' />
@@ -21,7 +27,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 					name='keywords'
 					content='Aguas, Aguas Cerro Chacarato, Agua Mineral'
 				/>
-				<link rel='manifest' href='/manifest.json' />
 				<link rel='icon' href='/favicon.ico' />
 				<link rel='apple-touch-icon' href='/favicon.ico' />
 			</head>

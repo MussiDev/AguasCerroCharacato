@@ -8,14 +8,14 @@
 }
 * {
 	scrollbar-width: thin;
-	scrollbar-color: rgb(14 116 144) #0f172a;
+	scrollbar-color: #182441 #0f172a;
 }
 *::-webkit-scrollbar-track {
-	background: #0f172a;
+	background: #182441;
 }
 
 *::-webkit-scrollbar-thumb {
-	background-color: rgb(14 116 144);
+	background-color: #0f172a;
 	border-radius: 0.875rem;
 	border: 0.1875rem solid #0f172a;
 }
