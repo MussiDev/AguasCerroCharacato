@@ -25,9 +25,11 @@ const CarouselComponent = () => {
 					<Image
 						src='/images/logo.png'
 						alt='logo'
-						quality={75}
+						quality={100}
+						placeholder='blur'
 						width={200}
 						height={100}
+						priority
 					/>
 				</div>
 				<h1 className='text-2xl md:text-5xl 2xl:text-7xl font-normal tracking-tight text-primary'>

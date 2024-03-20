@@ -37,8 +37,10 @@ const NavbarList = () => {
 					{showButton && (
 						<Image
 							src='/images/logo.png'
-							alt=''
-							quality={75}
+							alt='logo'
+							priority
+							placeholder='blur'
+							quality={100}
 							width={80}
 							height={100}
 						/>
