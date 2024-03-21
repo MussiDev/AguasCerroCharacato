@@ -21,12 +21,11 @@ const CarouselComponent = () => {
 			/>
 			<div className='bg-black/70 h-full w-full absolute top-0'></div>
 			<div className='flex flex-col gap-2 2xl:gap-8 absolute top-0 mt-[5%] 2xl:mt-[10%] items-center h-full w-full'>
-				<div className='w-20 md:32 lg:w-44'>
+				<div className='w-20 md:32 lg:w-44 '>
 					<Image
 						src='/images/logo.png'
 						alt='logo'
 						quality={100}
-						placeholder='blur'
 						width={200}
 						height={100}
 						priority

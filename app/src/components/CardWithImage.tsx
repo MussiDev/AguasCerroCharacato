@@ -35,7 +35,6 @@ const CardWithImage = ({
 							src={imageCard}
 							className='origin-center rounded-sm'
 							quality={100}
-							placeholder='blur'
 							priority
 						/>
 					</div>
@@ -61,7 +60,6 @@ const CardWithImage = ({
 								src={imageCard}
 								className='origin-center rotate-12'
 								quality={100}
-								placeholder='blur'
 								priority
 							/>
 						</div>
@@ -73,7 +71,6 @@ const CardWithImage = ({
 								src={imageCard}
 								className='origin-center'
 								quality={100}
-								placeholder='blur'
 								priority
 							/>
 						</div>
