@@ -1,10 +1,10 @@
-import { Space_Grotesk } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import React from "react";
 import "../styles/globals.css";
 import NavbarList from "./src/components/Navbar";
 import FooterItem from "./src/components/Footer";
 import SocialMedia from "./src/components/SocialMedia";
-const poppins = Space_Grotesk({
+const montserrat = Montserrat({
 	subsets: ["latin"],
 	weight: ["300", "400", "500", "600", "700"],
 });
@@ -14,7 +14,7 @@ export const metadata = {
 };
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
-		<html lang='es' className={poppins.className}>
+		<html lang='es' className={montserrat.className}>
 			<head>
 				<meta charSet='utf-8' />
 				<meta content='width=device-width, initial-scale=1.0' name='viewport' />
