@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 const Gallery = () => {
 	const images = [
-		"https://fotos.perfil.com/2023/05/29/cerro-characato-sa-1577018.jpg",
-		"https://fotos.perfil.com/2023/05/29/cerro-characato-sa-1577018.jpg",
-		"https://fotos.perfil.com/2023/05/29/cerro-characato-sa-1577018.jpg",
-		"https://fotos.perfil.com/2023/05/29/cerro-characato-sa-1577018.jpg",
-		"https://fotos.perfil.com/2023/05/29/cerro-characato-sa-1577018.jpg",
-		"https://fotos.perfil.com/2023/05/29/cerro-characato-sa-1577018.jpg",
+		"/images/capilla.jpg",
+		"/images/catarata.jpg",
+		"/images/cerro.png",
+		"/images/fondo.jpg",
+		"/images/characato.jpg",
+		"/images/manantial.jpg",
 	];
 	return (
 		<section className='flex flex-col gap-4 items-center mb-20'>
