@@ -30,15 +30,15 @@ const FooterItem = () => {
 					<div className='grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6'>
 						<div>
 							<Footer.LinkGroup col>
-								<Footer.Link href='#'>Inicio</Footer.Link>
-								<Footer.Link href='#'>Nuestra Agua</Footer.Link>
-								<Footer.Link href='#'>Nuestra Geografía</Footer.Link>
+								<Footer.Link href='#Inicio'>Inicio</Footer.Link>
+								<Footer.Link href='#Agua'>Nuestra Agua</Footer.Link>
+								<Footer.Link href='#Geografia'>Nuestra Geografía</Footer.Link>
 							</Footer.LinkGroup>
 						</div>
 						<div>
 							<Footer.LinkGroup col>
-								<Footer.Link href='#'>Nuestra Historia</Footer.Link>
-								<Footer.Link href='#'>
+								<Footer.Link href='#Historia'>Nuestra Historia</Footer.Link>
+								<Footer.Link href='#Ambiente'>
 									Compromiso con el Medio Ambiente
 								</Footer.Link>
 							</Footer.LinkGroup>
