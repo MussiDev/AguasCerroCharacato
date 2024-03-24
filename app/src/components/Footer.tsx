@@ -24,8 +24,16 @@ const FooterItem = () => {
 						/>
 					</div>
 					<div className='flex flex-row gap-4 items-center'>
-						<Footer.Icon href='#' icon={FaInstagram} />
-						<Footer.Icon href='#' icon={FaWhatsapp} />
+						<Footer.Icon
+							href='https://www.instagram.com/aguacerrocharacato?igsh=YzAwZ214aGJIOXMz'
+							target='_blank'
+							icon={FaInstagram}
+						/>
+						<Footer.Icon
+							href='https://wa.me/3416842593'
+							target='_blank'
+							icon={FaWhatsapp}
+						/>
 					</div>
 					<div className='grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6'>
 						<div>
