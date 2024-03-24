@@ -27,8 +27,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 					name='keywords'
 					content='Aguas, Aguas Cerro Chacarato, Agua Mineral'
 				/>
-				<link rel='icon' href='/favicon.ico' />
-				<link rel='apple-touch-icon' href='/favicon.ico' />
+				<link rel='icon' href='/images/logoIcono.ico' />
+				<link rel='apple-touch-icon' href='/images/logoIcono.ico' />
 			</head>
 			<body className=' flex flex-col justify-between h-screen'>
 				<NavbarList />
