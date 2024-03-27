@@ -26,6 +26,7 @@ const Home = () => {
 		{
 			titleCard: "Cerro Characato SA",
 			imageCard: "/images/logo.png",
+			logo: true,
 			title: "Nuestra Historia",
 			id: "Historia",
 			subtitleCard:

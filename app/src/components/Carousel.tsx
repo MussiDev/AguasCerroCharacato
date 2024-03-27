@@ -1,5 +1,4 @@
 import { Carousel } from "flowbite-react";
-import Image from "next/image";
 import React from "react";
 
 const CarouselComponent = () => {
@@ -20,22 +19,12 @@ const CarouselComponent = () => {
 				slide={false}
 			/>
 			<div className='bg-black/70 h-full w-full absolute top-0'></div>
-			<div className='flex flex-col gap-2 2xl:gap-8 absolute top-0 mt-[5%] 2xl:mt-[10%] items-center h-full w-full'>
-				<div className='w-20 md:32 lg:w-44 '>
-					<Image
-						src='/images/logo.png'
-						alt='logo'
-						quality={100}
-						width={200}
-						height={100}
-						priority
-					/>
-				</div>
-				<h1 className='text-2xl md:text-5xl 2xl:text-7xl font-normal tracking-tight text-primary'>
+			<div className='flex flex-col gap-2 2xl:gap-8 absolute top-0 mt-[10%] 2xl:mt-[20%] items-center h-full w-full'>
+				<h1 className='text-2xl md:text-5xl 2xl:text-7xl font-normal tracking-tight text-white'>
 					Cerro Characato
 				</h1>
-				<p className='text-lg md:text-xl 2xl:text-2xl tracking-tight text-secondary'>
-					Agua Mineral Natural De Calidad
+				<p className='text-lg md:text-xl 2xl:text-2xl tracking-tight text-white'>
+					Agua Mineral Natural De Manantial
 				</p>
 			</div>
 		</div>

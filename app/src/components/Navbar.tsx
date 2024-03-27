@@ -27,7 +27,9 @@ const NavbarList = () => {
 			theme={{
 				root: {
 					base: `${
-						showButton ? "bg-slate-900" : "py-4 bg-transparent"
+						showButton
+							? "bg-gradient-to-r from-white to-slate-900 "
+							: "py-4 bg-transparent"
 					} absolute z-50 flex flex-row justify-between w-full lg:px-4 fixed`,
 				},
 			}}

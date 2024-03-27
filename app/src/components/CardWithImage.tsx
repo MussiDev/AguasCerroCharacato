@@ -10,6 +10,7 @@ interface CardWithImageProps {
 	ImageLeft?: boolean;
 	bottle?: boolean;
 	id: string;
+	logo?: boolean;
 }
 
 const CardWithImage = ({
@@ -20,6 +21,7 @@ const CardWithImage = ({
 	ImageLeft,
 	bottle,
 	id,
+	logo,
 }: CardWithImageProps) => {
 	return (
 		<section className='flex flex-col py-20 md:py-40 gap-4 md:px-12' id={id}>
@@ -69,7 +71,7 @@ const CardWithImage = ({
 								layout='fill'
 								alt={`Image card ${title}`}
 								src={imageCard}
-								className='origin-center'
+								className={`${logo && "bg-white"} origin-center`}
 								quality={100}
 								priority
 							/>
