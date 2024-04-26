@@ -1,5 +1,4 @@
 import { Carousel } from "flowbite-react";
-import Image from "next/image";
 import React from "react";
 
 const CarouselComponent = () => {
@@ -27,12 +26,6 @@ const CarouselComponent = () => {
 				<p className='text-lg md:text-xl 2xl:text-2xl tracking-tight text-white'>
 					Agua Mineral Natural De Manantial
 				</p>
-				<p className='text-lg md:text-xl 2xl:text-2xl font-bold  drop-shadow-sm shadow-white text-secondary'>
-					CONECTÁ CON LA NATURALEZA
-				</p>
-			</div>
-			<div className='absolute right-6 bottom-0 md:bottom-6 w-12 h-12 lg:w-32 lg:h-32'>
-				<Image src={"/images/sodio.jpg"} alt='sodio' fill />
 			</div>
 		</div>
 	);

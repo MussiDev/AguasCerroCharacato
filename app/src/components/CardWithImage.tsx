@@ -25,9 +25,21 @@ const CardWithImage = ({
 }: CardWithImageProps) => {
 	return (
 		<section className='flex flex-col py-20 md:py-40 gap-4 md:px-12' id={id}>
-			<h5 className='text-xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white text-center'>
-				{title}
-			</h5>
+			{id === "Agua" ? (
+				<div className='flex justify-center gap-4 items-center'>
+					<h5 className='text-xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white text-center'>
+						{title}
+					</h5>
+					<span className='w-24 h-24 relative'>
+						<Image src={"/images/sodio.png"} alt='sodio' fill />
+					</span>
+				</div>
+			) : (
+				<h5 className='text-xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white text-center'>
+					{title}
+				</h5>
+			)}
+
 			{ImageLeft ? (
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-16 place-content-center place-items-center md:mt-16'>
 					<div className='relative h-[10rem] w-[16rem] sm:h-[16rem] sm:w-96 lg:w-[30rem] lg:h-[17rem] xl:w-[40rem] xl:h-[20rem]'>
